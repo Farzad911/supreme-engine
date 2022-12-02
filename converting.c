@@ -11,7 +11,7 @@ void converting() {
 
 // V1
 void converting(void) {
-    printf("*** Start of Converting Strings to int Demo ***\n");//printingstatement forbeginning of conversion 1
+    printf("*** Start of Converting Strings to int Demo ***\n"); //printing statement for beginning the module.
     char    intString[BUFFER_SIZE];// declaring array of char type
     int     intNumber;//declaring variable of int type
     // It start a do-while loop
@@ -25,7 +25,7 @@ void converting(void) {
         }
     } while (strcmp(intString, "q") != 0); // breaks the loop if user inputs 'q' as the only character
     // The do-while loop end
-    printf("*** End of Converting Strings to int Demo ***\n\n");// Output an ending statement to mark end of the modul
+    printf("*** End of Converting Strings to int Demo ***\n\n");// Output an ending statement to mark end of the module
 }
 /* Version 2 */
 >> insert here
