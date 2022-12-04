@@ -1,0 +1,30 @@
+Test 1
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+2
+*** start of Concalenaling Strings Demo ***
+Type the 1st string (q - to quit):
+how
+Type the 2and string:
+ are
+Concatenated string is 'how are
+'
+Type the 1st string (q - to quit):
+q
+*** End of Concalenaling Strings Demo ***
+Test 2
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+2
+*** start of Concalenaling Strings Demo ***
+Type the 1st string (q - to quit):
+q
+*** End of Concalenaling Strings Demo ***
