@@ -1,0 +1,27 @@
+Test 1
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+3
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit):
+45dogs
+converted number is 45
+Type an int numeric string (q - to quit):
+q
+*** End of Converting Strings to int Demo ***
+Test 2
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+3
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit):
+q
+*** End of Converting Strings to int Demo ***
