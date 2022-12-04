@@ -1,0 +1,29 @@
+Test 1
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+4
+*** Start of Tokenizing Words Demo ***
+Type a few word separated by space (q - to quit):
+how are you
+Word #1 is 'how'
+Word #2 is 'are'
+Word 33 is 'you'
+Type a few word separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+Test 2
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+4
+*** Start of Tokenizing Words Demo ***
+Type a few word separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
