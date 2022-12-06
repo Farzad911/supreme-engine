@@ -25,7 +25,32 @@ do {
 	printf("*** End of Concatenating Strings Demo ***\n\n"); // Output an ending statement to mark end of the module
 }
 /* Version 2 */
->> insert here
+printf("*** Start of Comparing Strings Demo ***\n");//printing statement for beginning the module
+char compare1[BUFFER_SIZE];//declaring array of char type
+char compare2[BUFFER_SIZE];//declaring array of char type
+int result;//declaring array of int type
+//Start a do-while loop
+do {
+    printf("Type the 1st string to compare (q - to quit):\n"); // printing instructionstatement
+    fgets(compare1, BUFFER_SIZE, stdin);	// Get the 1st string input
+    compare1[strlen(compare1) - 1] = '\0';	// Add the null terminator in the end of the string
+	if (strcmp(compare1, "q") != 0) {		// Check if the user wants to exit the program
+		printf("Type the 2nd string to compare:\n");
+		fgets(compare2, BUFFER_SIZE, stdin);	// Get the 2nd string input
+		compare2[strlen(compare2) - 1] = '\0';	// Add the null terminator in the end of the string
+		result = strcmp(compare1, compare2);	// Compare the 2 strings
+		if (result < 0)
+			printf("\'%s\' string is less than '%s\'\n", compare1, compare2);
+		else if (result == 0)
+			printf("\'%s\' string is equal to '%s\'\n", compare1, compare2);
+		else
+		        printf("\'%s\' string is greater than '%s\'\n", compare1, compare2);
+		}
+} while (strcmp(compare1, "q") != 0);	// Continue while user doesn't want to quit
+// The do-while loop end
+printf("*** End of Comparing Strings Demo ***\n\n");// Output an ending statement to mark end of the module
+
+
 
 
 /* Version 3 */
