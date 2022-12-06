@@ -14,7 +14,7 @@ void tokenizing(void) {
     int wordsCounter;//declaring variable of int type
      // It start a do-while loop
     do {
-        printf("Type a few words separated by space (q - to quit):\n"); // printing instructionstatement
+        printf("Type a few words separated by space (q - to quit):\n"); // printing instruction statement
 
         fgets(words, BUFFER_SIZE, stdin);// Prompt user for a integer numeric string
         words[strlen(words) - 1] = '\0'; // replaces the new line at the end of the string with null to indicate when the string ends
@@ -32,7 +32,29 @@ void tokenizing(void) {
    printf("*** End of Tokenizing Words Demo ***\n\n");// Output an ending statement to mark end of the module
 }
 /* Version 2 */
->> insert here
+ printf("*** Start of Tokenizing Phrases Demo ***\n");  //printing statement for beginning the module
+    char phrases[BUFFER_SIZE]; // declaring array of char type
+    char* nextPhrase = NULL; // declaring array of char type
+    int phrasesCounter; // declaring array of int type
+    // start a do-while loop
+    do {
+        printf("Type a few phrases separated by comma (q - to quit):\n"); // printing instruction statement
+
+        fgets(phrases, BUFFER_SIZE, stdin); // Prompt user for a integer numeric string
+        phrases[strlen(phrases) - 1] = '\0'; // replaces the new line at the end of the string with null to indicate when the string ends
+
+        if ((strcmp(phrases, "q") != 0)) { // only executes if user did not input 'q'
+            nextPhrase = strtok(phrases, ""); // use an empty space as the delimiter to know when to split the string into tokens
+            phrasesCounter = 1; // intialize phrasesCounter to 1, and start counting from 1 to keep track of how many words are being tokenized
+               // A loop is used to print out the string, while incrementing phrasesCounter to keep track of the number of phrases being tokenized 
+            while (nextPhrase) {
+                printf("Phrase #%d is \'%s\'\n", phrasesCounter++, nextPhrase);
+                nextPhrase = strtok(NULL, ","); // when the next value of the string reads as null, we break out of the loop
+            }
+        }
+    } while (strcmp(phrases, "q") != 0); // breaks the loop if user inputs 'q' as the only character
+    // The do-while loop end
+    printf("*** End of Tokenizing Phrases Demo ***\n\n"); // Output an ending statement to mark end of the module
 
 
 /* Version 3 */
