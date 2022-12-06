@@ -1,3 +1,4 @@
+V1//
 Test 1
 1 - Fundamentals
 2 - Manipulation
@@ -27,3 +28,21 @@ Which module to run?
 Type a few word separated by space (q - to quit):
 q
 *** End of Tokenizing Words Demo ***
+V2//
+Test 1
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+4
+*** start of Tokenizing Phrases Demo ***
+hi,how,are
+Phrase #1 is 'hi'
+Phrase #2 is 'how'
+Phrase #3 is 'are'
+'
+Type a few phrases separated by coma(q - to quit)
+q
+*** End of Tokenizing Phrases Demo ***
