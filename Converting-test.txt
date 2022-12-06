@@ -1,3 +1,4 @@
+V1//
 Test 1
 1 - Fundamentals
 2 - Manipulation
@@ -25,3 +26,22 @@ Which module to run?
 Type an int numeric string (q - to quit):
 q
 *** End of Converting Strings to int Demo ***
+V2//
+Test 1
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+3
+*** start of Converting Strings to double Demo ***
+Type the double numeric string (q to quit)
+45.65
+Converted number is 45.650000
+Type the double numeric string (q to quit)
+q
+* End of Converting Strings to double Demo *
+
+
+
