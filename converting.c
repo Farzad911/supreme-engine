@@ -14,7 +14,7 @@ void converting(void) {
     printf("*** Start of Converting Strings to int Demo ***\n"); //printing statement for beginning the module.
     char    intString[BUFFER_SIZE];// declaring array of char type
     int     intNumber;//declaring variable of int type
-    // It start a do-while loop
+    // start of a do-while loop
     do {
         printf("Type an int numeric string (q - to quit) : \n"); // printing instructionstatement
         fgets(intString, BUFFER_SIZE, stdin);// Prompt user for a integer numeric string
@@ -28,7 +28,29 @@ void converting(void) {
     printf("*** End of Converting Strings to int Demo ***\n\n");// Output an ending statement to mark end of the module
 }
 /* Version 2 */
->> insert here
+  printf("*** Start of Converting Strings to double Demo ***\n"); //printing statement for beginning the module.
+
+	char	doubleString[BUFFER_SIZE]; // declaring array of char type
+	double	doubleNumber; //declaring variable of double type
+    
+    // start of a do-while loop
+	do {
+		// Prompt user for a double numeric string, replacing the new line read by 
+		// fgets with a null terminator
+		printf("Type an double numeric string (q - to quit):\n"); // printing instructionstatement
+		fgets(doubleString, BUFFER_SIZE, stdin);
+		doubleString[strlen(doubleString) - 1] = '\0';
+
+		// Check user input, exit if 'q' was entered.  
+		if ((strcmp(doubleString, "q") != 0)) {
+
+			// Convert user entry from numeric string to a double, then display it
+			doubleNumber = atof(doubleString);
+			printf("Converted number is %f\n", doubleNumber);
+		}
+	} while (strcmp(doubleString, "q") != 0);  // breaks the loop if user inputs 'q' as the only character
+     // The do-while loop end
+    printf("*** End of Converting Strings to double Demo ***\n\n");// Output an ending statement to mark end of the module
 
 
 /* Version 3 */
