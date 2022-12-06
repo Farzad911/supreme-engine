@@ -1,3 +1,4 @@
+v1//
 Test 1
 1 - Fundamentals
 2 - Manipulation
@@ -28,3 +29,19 @@ Which module to run?
 Type the 1st string (q - to quit):
 q
 *** End of Concalenaling Strings Demo ***
+V2//
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenising
+0 - Exit
+Which module to run?
+2
+* start of Comparing Strings Demo *
+Type the 1st string to compare (q to quit):
+hi
+Type the 2nd string to compare:
+HI
+'hi' string is greater than 'HI'
+Type the 1st string to compare (q to quit):
+q
