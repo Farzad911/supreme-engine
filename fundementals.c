@@ -54,3 +54,30 @@ void fundamentals(void) {
     // The do-while loop end
     printf("*** End of Measuring Strings Demo ***\n\n");// Output an ending statement to mark end of the module
 }
+/* Version 2 */
+ printf("*** Start of Copying Strings Demo ***\n"); //printing statement for beginning the module.
+    char destination [BUFFER_SIZE]; // declaring array of char type 
+    char source[BUFFER_SIZE]; // declaring array of char type 
+// Start a do-while loop
+    do {
+
+        //Replaces first element of destination with null terminator
+        destination [0] = '\0'; 
+
+        printf("Destination string is reset to empty\n"); // printing instruction statement 
+        printf("Type the source string (q - to quit): \n"); // printing instruction statement 
+        fgets (source, BUFFER_SIZE, stdin); //Gets the user entered string
+        //Replaces user entered new line with null terminator
+        source[strlen (source) - 1] = '\0'; 
+        // checks if entered string is not equals to 'q'.
+        if (strcmp (source, "q") != 0) {
+
+            //copies string from source to destination
+            strcpy (destination, source); 
+            printf("New destination string is \'%s\'\n", destination);
+        }
+        //loops till user enter q
+    } while (strcmp (source, "q") != 0); // breaks the loop if user inputs 'q' as the only character
+// The do-while loop end 
+    printf("*** End of Copying Strings Demo ***\n\n"); // Output an ending statement to mark end of the module
+}
