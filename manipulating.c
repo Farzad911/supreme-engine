@@ -54,7 +54,29 @@ printf("*** End of Comparing Strings Demo ***\n\n");// Output an ending statemen
 
 
 /* Version 3 */
->> insert here
-
-
+printf("*** Start of Searching Strings Demo ***\n");//printing statement for beginning the module
+	char haystack[BUFFER_SIZE];//declaring array of char type
+	char needle[BUFFER_SIZE];//declaring array of char type
+	char* occurence = NULL;//declaring array of char type
+	//Start a do-while loop
+	do {
+		printf("Type the string (q - to quit):\n"); // printing instructionstatement
+		fgets(haystack, BUFFER_SIZE, stdin);		// Get the 1st string input
+		haystack[strlen(haystack) - 1] = '\0';		// Add the null terminator in the end of the string
+		if (strcmp(haystack, "q") != 0) {			// Check if the user wants to exit the program
+			printf("Type the substring:\n");
+			fgets(needle, BUFFER_SIZE, stdin);		// Get the 2nd string input
+			needle[strlen(needle) - 1] = '\0';		// Add the null terminator in the end of the string
+			occurence = strstr(haystack, needle);	// Check if 2nd string occurs on 1st string
+			if (occurence)							// If found, return the position where 2nd string occurs
+				printf("\'%s\' found at %d position\n", needle, (int) (occurence - haystack));
+			else						
+				printf("Not found\n");				
+		}
+	} while (strcmp(haystack, "q") != 0); // Continue while user doesn't want to quit
+         // The do-while loop end
+	printf("*** End of Searching Strings Demo ***\n\n"); // Output an ending statement to mark end of the module
 }
+
+
+
