@@ -54,7 +54,29 @@ void converting(void) {
 
 
 /* Version 3 */
->> insert here
+printf("*** Start of Converting Strings to long Demo ***\n");//printing statement for beginning the module.
+	
+	char	longString[BUFFER_SIZE];// declaring array of char type
+	long	longNumber;//declaring variable of long type
+        // start of a do-while loop
+	do {
+		// Prompt user for a long numeric string, replacing the new line read by
+		// fgets with a null terminator.
+		printf("Type a long numeric string (q - to quit):\n");// printing instructionstatement
+		fgets(longString, BUFFER_SIZE, stdin);// Prompt user for a integer numeric string
+		longString[strlen(longString) - 1] = '\0';
 
+		// Check user input, exit if 'q' was entered.
+		if ((strcmp(longString, "q") != 0)) {
 
+			// Convert user entry from numeric string to a long, then display it
+			longNumber = atol(longString);
+			printf("Converted number is %ld\n", longNumber);
+		}
+	} while (strcmp(longString, "q") != 0);// breaks the loop if user inputs 'q' as the only character
+	// The do-while loop end
+        printf("*** End of Converting Strings to long Demo ***\n\n");// Output an ending statement to mark end of the module
 }
+
+
+
