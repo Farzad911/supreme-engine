@@ -58,7 +58,32 @@ void tokenizing(void) {
 
 
 /* Version 3 */
->> insert here
+ // V3
+    /* Delimiter is now a single dot (".") */
+    printf("*** Start of Tokenizing Sentences Demo ***\n"); //printing statement for beginning the module
+    char sentences[BUFFER_SIZE]; // declaring array of char type
+    char* nextSentence = NULL;// declaring array of char type
+    int sentencesCounter;// declaring array of int type
+ // start a do-while loop
+    do {
+        printf("Type a few sentences separated by dot (q - to quit):\n"); // printing instruction statement
+
+        fgets(sentences, BUFFER_SIZE, stdin);
+        sentences[strlen(sentences) - 1] = '\0'; // replaces the new line at the end of the string with null to indicate when the string ends
+
+        if ((strcmp(sentences, "q") != 0)) { // only executes if user did not input 'q'
+            nextSentence = strtok(sentences, "."); // use a dot as the delimiter to know when to split the string into tokens
+            sentencesCounter = 1; // intialize sentencesCounter to 1, and start counting from 1 to keep track of how many sentences are being tokenized
+
+    //  use a loop to print out the string, while incrementing phrasesCounter to keep track of the number of sentences being tokenized 
+            while (nextSentence) {
+                printf("Sentence #%d is \'%s\'\n", sentencesCounter++, nextSentence);
+                nextSentence = strtok(NULL, "."); // when the next value of the string reads as null, we break out of the loop
+            }
+        }
+    } while (strcmp(sentences, "q") != 0); // breaks the loop if user inputs 'q' as the only character
+// The do-while loop end
+    printf("*** End of Tokenizing Sentences Demo ***\n\n"); // Output an ending statement to mark end of the module
 
 
 }
