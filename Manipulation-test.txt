@@ -45,3 +45,22 @@ HI
 'hi' string is greater than 'HI'
 Type the 1st string to compare (q to quit):
 q
+*** End of Concalenaling Strings Demo ***
+v3//
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenizing
+0 - Exit
+Which module to run? 
+2
+*** Start of Searching Strings Demo ***
+Type the string (q - to quit):
+hello
+Type the substring:
+lo
+'lo' found at 3 position
+Type the string (q - to quit):
+q
+*** End of Searching Strings Demo ***
+
