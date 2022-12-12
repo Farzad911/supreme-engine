@@ -42,6 +42,22 @@ Converted number is 45.650000
 Type the double numeric string (q to quit)
 q
 * End of Converting Strings to double Demo *
+v3//
+1 - Fundamentals
+2 - Manipulation
+3 - Converting
+4 - Tokenizing
+0 - Exit
+Which module to run? 
+3
+*** Start of Converting Strings to long Demo ***
+Type a long numeric string (q - to quit):
+4548666fg   
+Converted number is 4548666
+Type a long numeric string (q - to quit):
+q
+*** End of Converting Strings to long Demo ***
+
 
 
 
